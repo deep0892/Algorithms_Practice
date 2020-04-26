@@ -1,4 +1,4 @@
-# https://leetcode.com/discuss/interview-question/364760/
+https://leetcode.com/discuss/interview-question/351783/
 """
 Discription of question in above link
 """
