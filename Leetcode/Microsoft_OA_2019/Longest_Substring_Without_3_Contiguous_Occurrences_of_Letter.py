@@ -2,9 +2,6 @@
 """
 Discription of question in above link
 """
-from collections import defaultdict
-from typing import Dict, List
-
 
 def validLongestSubstring(input: str) -> str:
     start: int = 0
@@ -42,6 +39,6 @@ def main():
     print(validLongestSubstring("aabbaaaaabb")) # expected: aabbaa
     print(validLongestSubstring("aabbaabbaabbaa"))  # expected: aabbaabbaabbaa
     print(validLongestSubstring("abbaabbaaabbaaa"))  # expected: abbaabbaa
-    
+
 if __name__=="__main__": 
     main()
