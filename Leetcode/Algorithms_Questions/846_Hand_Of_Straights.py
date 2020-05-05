@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+# https://leetcode.com/problems/hand-of-straights/
 """
 Discription of question in above link
 """
