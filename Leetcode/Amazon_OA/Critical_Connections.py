@@ -1,4 +1,4 @@
-# https://leetcode.com/discuss/interview-question/372581
+# https://leetcode.com/discuss/interview-question/436073/
 def isConnected(graph):
     trav = set()
     start = None
