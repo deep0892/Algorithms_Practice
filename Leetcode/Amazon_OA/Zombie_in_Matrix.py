@@ -6,7 +6,6 @@ def minHour(grid):
     if not grid:
         return -1
     rows, columns = len(grid), len(grid[0])
-    print(rows,columns)
     if not rows and not columns:
         return -1
     
@@ -15,7 +14,6 @@ def minHour(grid):
     hour = -1
     direction = [[1,0], [0,1],[-1,0],[0,-1]]
     while len(q) > 0:
-        print(f"start of while q: ${q}")
         size = len(q)
         for i in range(size):
             current = q.pop(0)
