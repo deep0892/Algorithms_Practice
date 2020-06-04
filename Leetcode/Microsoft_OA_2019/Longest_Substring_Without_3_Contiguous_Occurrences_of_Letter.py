@@ -28,7 +28,7 @@ def validLongestSubstring(input: str) -> str:
         else:
             cnt +=1
             end +=1
-    if flag ==1: 
+    if flag == 1: 
         return input  
     return input[max_start: max_start+max_length]
 
