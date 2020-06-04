@@ -15,7 +15,7 @@ def max_network_rank(A, B, N):
     M = len(A)
     for i in range(0,M):
         cnt_a = 0
-        nt_b = 0
+        cnt_b = 0
         a = A[i]
         b = B[i]
         if a in dic:
@@ -23,17 +23,17 @@ def max_network_rank(A, B, N):
         else:
             cnt_a = get_rank(A,a) + get_rank(B,a)
         if b in dic:
-            cnt_b = dic[a]
+            cnt_b = dic[b]
         else:
             cnt_b = get_rank(A,b) + get_rank(B,b)
-        max_net_rank = max(max_net_rank, cnt_a + cnt_b -1)
+        max_net_rank = max(max_net_rank, cnt_a + cnt_b - 1)
     return max_net_rank
     
 # Driver program to test the above function
 def main(): 
-    A = [1,2,3,4]
-    B = [2,3,4,5]
-    N = 5
+    A = [1,2,3,3]
+    B = [2,3,1,4]
+    N = 4
     print(max_network_rank(A,B,N))
   
 if __name__=="__main__": 
