@@ -9,10 +9,10 @@ def count(arr):
     
     while(i < m-2):
         if(arr[i] == arr[i+1] and arr[i] == arr[i+2]):
-            cnt +=1
+            cnt += 1
             i += 3
         else:
-            i +=1
+            i += 1
     return cnt
     
     

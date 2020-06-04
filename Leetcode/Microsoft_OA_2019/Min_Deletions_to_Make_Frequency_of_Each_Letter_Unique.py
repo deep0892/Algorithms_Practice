@@ -17,7 +17,6 @@ def minDeletions(input: str) -> int:
 
     for k,e in char_count.items():
         if e in char_set:
-            # do something
             for i in range(e,0,-1):
                 if i not in char_set:
                     char_set.update([i])
