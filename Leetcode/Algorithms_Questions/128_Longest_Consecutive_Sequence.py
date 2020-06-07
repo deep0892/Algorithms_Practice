@@ -5,7 +5,7 @@ Discription of question in above link
 
 from typing import List
 
-
+# O(n^3)
 class Solution_O_n_3:
     def longestConsecutive(self, nums: List[int]) -> int:
         max_sequence_length = 0
@@ -27,6 +27,7 @@ class Solution_O_n_3:
                 return True
         return False
 
+# O(n)
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         max_sequence_length = 0
