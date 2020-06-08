@@ -17,23 +17,25 @@ calculate the minimum number of operations needed so that every colleague has th
 
 import sys
 
+
 def count(arr):
     arr.sort()
     sum = sys.maxsize
-    for base in range(0,3):
+    for base in range(0, 3):
         current_sum = 0
-        for i in range(0,len(arr)):
+        for i in range(0, len(arr)):
             delta = arr[i] - arr[0] + base
-            current_sum += int(delta/5) +  int( (delta % 5) /2) + delta % 5 % 2
-        sum = min(sum,current_sum)
+            current_sum += int(delta/5) + int((delta % 5) / 2) + delta % 5 % 2
+        sum = min(sum, current_sum)
     return sum
-    
-    
+
+
 # Driver program to test the above function
-def main(): 
-    arr =  [1,1,5]
+def main():
+    arr = [1, 1, 5]
     m = len(arr)
     print(count(arr))
-  
-if __name__=="__main__": 
+
+
+if __name__ == "__main__":
     main()

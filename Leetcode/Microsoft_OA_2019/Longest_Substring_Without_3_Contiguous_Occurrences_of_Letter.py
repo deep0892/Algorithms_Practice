@@ -4,6 +4,7 @@
 Discription of question in above link
 """
 
+
 def validLongestSubstring(input: str) -> str:
     str_start: int = 0
     end: int = 1
@@ -22,21 +23,24 @@ def validLongestSubstring(input: str) -> str:
             first = input[str_start]
             cnt = 1
         elif input[end] != first:
-            first= input[end]
-            end +=1
+            first = input[end]
+            end += 1
             cnt = 1
         else:
-            cnt +=1
-            end +=1
-    if flag == 1: 
-        return input  
+            cnt += 1
+            end += 1
+    if flag == 1:
+        return input
     return input[max_start: max_start+max_length]
 
 # Driver program to test the above function
-def main(): 
-    print(validLongestSubstring("aabbaaaaabb")) # expected: aabbaa
+
+
+def main():
+    print(validLongestSubstring("aabbaaaaabb"))  # expected: aabbaa
     print(validLongestSubstring("aabbaabbaabbaa"))  # expected: aabbaabbaabbaa
     print(validLongestSubstring("abbaabbaaabbaaa"))  # expected: abbaabbaa
 
-if __name__=="__main__": 
+
+if __name__ == "__main__":
     main()

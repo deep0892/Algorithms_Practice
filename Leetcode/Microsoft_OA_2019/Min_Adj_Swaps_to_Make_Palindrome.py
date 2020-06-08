@@ -21,6 +21,7 @@ def can_be_palindrome(i: str) -> bool:
     else:
         return count_odd == 1
 
+
 def compute_palindrome(i: str) -> str:
     char_count: Dict[str, int] = defaultdict(int)
     for c in i:
@@ -37,7 +38,7 @@ def compute_palindrome(i: str) -> str:
                 res += c
                 char_count[c] -= 2
     return res + middle + res[-1::-1]
-    
+
 
 def min_swaps_anagram(source: str, target: str) -> int:
     s_l: List[str] = list(source)
@@ -54,7 +55,9 @@ def min_swaps_anagram(source: str, target: str) -> int:
     return count
 
 # Driver program to test the above function
-def main(): 
+
+
+def main():
     source = "mamad"
     if not can_be_palindrome(source):
         return -1
@@ -63,5 +66,6 @@ def main():
 
     print(min_swaps_anagram(source, target))
 
-if __name__=="__main__": 
+
+if __name__ == "__main__":
     main()
