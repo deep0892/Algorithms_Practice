@@ -39,7 +39,6 @@ def main():
     a = 'daBcd'
     b = 'ABC'
     sol = Solution()
-    print(sol.abbreviation(a, b))
 
 
 if __name__ == "__main__":
