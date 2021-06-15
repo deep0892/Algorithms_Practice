@@ -27,6 +27,26 @@ def minDeletions(input: str) -> int:
             char_set.update([e])
     return result
 
+# Alternate solution:
+def minDeletions_alt(self, s: str) -> int:
+    freq = {}
+    count_arr = []
+    num_del = 0
+    for i in s:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+
+    for item,count in freq.items():
+        if count in count_arr:
+            while count in count_arr and count>0:
+                count -=1
+                num_del += 1
+        count_arr.append(count)
+
+    return num_del
+
 # Driver program to test the above function
 
 
